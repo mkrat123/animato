@@ -6,6 +6,7 @@
 
 }
 
+/**************************************************Bounce**********************************************/
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
     animation-timing-function: linear;
@@ -32,6 +33,7 @@
   transform-origin: center bottom;
 }
 
+/**************************************************FLash**********************************************/
 @keyframes flash {
   from, 50%, to {
     opacity: 1;
@@ -46,13 +48,54 @@
   animation-name: flash;
 }
 
+/**************************************************Shake**********************************************/
 
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
 
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
 
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
 
+.shake {
+  animation-name: shake;
+}
 
+/**************************************************Swing**********************************************/
 
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
 
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
 
 
 

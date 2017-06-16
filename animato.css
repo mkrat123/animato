@@ -1,7 +1,9 @@
 
 .animated {
   animation-duration: 1s;
+ // animation-iteration-count: infinite;
   animation-fill-mode: both;
+
 }
 
 @keyframes bounce {
@@ -16,7 +18,7 @@
   }
 
   70% {
-    animation-timing-functioanimation-timing-functionn: linear;
+    animation-timing-function: linear;
     transform: translate3d(0, -20px, 0);
   }
 
@@ -29,6 +31,76 @@
   animation-name: bounce;
   transform-origin: center bottom;
 }
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
